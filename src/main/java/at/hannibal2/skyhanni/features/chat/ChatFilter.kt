@@ -322,8 +322,7 @@ object ChatFilter {
         "§eObtain a §r§6Booster Cookie §r§efrom the community shop in the hub!",
         "Unknown command. Type \"/help\" for help. ('uhfdsolguhkjdjfhgkjhdfdlgkjhldkjhlkjhsldkjfhldshkjf')",
         "§3[SBE] §a§cUnable to download bin data. This may result in certain features not working!",
-        "§e[NPC] Feast Chef Ted§r§f: §rThanks for the donation! I've added a §eKernel §fto your purse.",
-    )
+        )
 
     private val skymallMessages = listOf(
         "§bNew day! §r§eYour §r§2Sky Mall §r§ebuff changed!",
@@ -479,10 +478,6 @@ object ChatFilter {
         "§e\\[NPC] Feast Chef Ted§r§f: §rThanks for the donation! I've added a §eKernel §fto your purse.".toPattern(),
     )
 
-    // §e[NPC] Feast Chef Ted§r§f: §rThanks for the donation! I've added a §eKernel §fto your purse.
-    private val masterChefMessages = listOf(
-        "§e[NPC] Feast Chef Ted§r§f: §rThanks for the donation! I've added a §eKernel §fto your purse.",
-    )
 
     /**
      ** REGEX-TEST: §eYou haven't claimed your §r§6Summer Rewards §r§eyet!
@@ -566,7 +561,7 @@ object ChatFilter {
         "achievement_get" to achievementGetPatterns,
         "parkour" to parkourPatterns,
         "teleport_pads" to teleportPadPatterns,
-        "masterchef" to masterChefPatterns,
+
     )
 
     private val repoPatternsMap: Map<String, List<Pattern>> = mapOf(
@@ -599,7 +594,7 @@ object ChatFilter {
         "lottery" to lotteryMessages,
         "parkour" to parkourCancelMessages,
         "teleport_pads" to teleportPadMessages,
-        "masterchef" to masterChefMessages,
+
     )
 
     private val messagesContainsMap: Map<String, List<String>> = mapOf(
